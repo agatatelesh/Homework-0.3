@@ -1,7 +1,13 @@
-let money = prompt("Ваш бюджет?", '120393');
-let name = prompt("Название вашего магазина?", 'kvakin');
-let time = 27;
+let money,
+    name,
+    time 
 
+function start() {
+     money = prompt("Ваш бюджет?", '120393');
+     name = prompt("Название вашего магазина?", 'kvakin');
+     time = 27;
+}
+start();
 
 let mainList = {
     budget: money,
