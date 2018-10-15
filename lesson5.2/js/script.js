@@ -12,6 +12,8 @@ let start = document.querySelector('#start'),
     btnOptionalexpenses = document.querySelectorAll('button')[1],
     btnCountBudget = document.querySelectorAll('button')[2],
     optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item'),
-    a = document.querySelectorAll("input");
+    yearValue = document.querySelectorAll("input"),
+    monthValue = document.querySelectorAll('input'),
+    dayValue = document.querySelectorAll('input');
 
-console.log(a);
+console.log();
