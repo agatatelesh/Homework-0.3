@@ -1,0 +1,28 @@
+body {
+    background-color: #5CCDC9;
+}
+
+.watch {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -240px;
+    background-color:#1D7471;
+}
+.timer {
+    width: 480px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -115px 0 0 -240px;
+    background-color:#009B95;
+}
+ #digital_watch{
+    color: #DCDCDC; 
+    font-size: 70px;
+    font-weight: bold;
+    padding-left: 100px;
+ }
