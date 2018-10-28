@@ -172,4 +172,8 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     getForm(form,input);
     getForm(contactForm,contactInput);
+
+
+    
+
 });
