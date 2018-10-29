@@ -32,15 +32,15 @@ function form() {
 
                     request.onreadystatechange = function(){
                         if (request.readyState < 4) {
-                            resolve()
+                            resolve();
                         } else if (request.readyState ===4 && request.status == 200) {
-                            resolve()
+                            resolve();
                         } else {
-                            reject()
+                            reject();
                         }
-                    }
+                    };
                     request.send(data);
-                })
+                });
                 
             }
             function clearInput() {                
@@ -53,9 +53,8 @@ function form() {
             .then(()=> statusMessege.innerHTML = massage.loading)
             .then(()=> statusMessege.innerHTML = massage.success)    
             .catch(()=> statusMessege.innerHTML = massage.failure)
-            .then(clearInput)          
-    
-            
+            .then(clearInput);    
+                
         });
     }
     getForm(form,input);

@@ -181,6 +181,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //Slider
 
+    
+
+        
+
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
         prev = document.querySelector('.prev'),
@@ -189,7 +193,7 @@ window.addEventListener('DOMContentLoaded', function() {
         dots = document.querySelectorAll('.dot');
 
     
-
+        showSlides(slideIndex);
         function showSlides(n) {
             if (n > slides.length) {
                 slideIndex = 1;
@@ -203,7 +207,7 @@ window.addEventListener('DOMContentLoaded', function() {
             slides[slideIndex - 1].style.display = 'block';
             dots[slideIndex - 1].classList.add('dot-active');
         }
-        showSlides(slideIndex);
+        
 
     function plusSlides(n) {
         showSlides(slideIndex += n);
@@ -281,5 +285,6 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+    });
+
         
-});

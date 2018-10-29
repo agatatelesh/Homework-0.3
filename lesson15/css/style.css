@@ -336,6 +336,42 @@ header ul li:before {
 .content .slider .wrap .prev:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+.content .slider .wrap .next:hover .arrow-right {
+  opacity: 1;
+}
+.content .slider .wrap .next .arrow-right {
+  width: 30px;
+  height: 30px;
+  background: url(../icons/right-arrow.svg) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  opacity: .4;
+  -webkit-transition: 1s;
+          transition: 1s;
+}
+.content .slider .wrap .prev:hover .arrow-left {
+  opacity: 1;
+}
+.content .slider .wrap .prev .arrow-left {
+  width: 30px;
+  height: 30px;
+  background: url(../icons/left-arrow.svg) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  opacity: .4;
+  -webkit-transition: 1s;
+          transition: 1s;
+}
 .content .slider .wrap .next {
   position: absolute;
   cursor: pointer;
