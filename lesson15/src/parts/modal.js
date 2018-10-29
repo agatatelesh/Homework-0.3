@@ -6,28 +6,26 @@ function modal() {
         infoGlob = document.querySelector('.info'),
         body = document.querySelector('body');
 
-    body.addEventListener('click', function(event) {
-        let target = event.target;
-        if (target.className == "description-btn") {
-           openMore(infoGlob);           
-        }
-        if (target.className == "popup-close") {
-            closeMore(this);
-        }
-        if (target.className == "more") {
-            openMore(more);
-        }
-        console.log(target);
+    more.addEventListener('click', function() {
+        openMore();
     });
+    close.addEventListener('click', function() {
+        closeMore();
+    });
+    for (let i = 0; i < desBtn.length; i++) {
+        desBtn[i].addEventListener('click', function() {
+            openMore();
+        });
+    }
 
-    function openMore(a) {
+    function openMore() {
         overlay.style.display = 'block';
-        a.classList.add('more-splash');
+        infoGlob.classList.add('more-splash');
         document.body.style.overflow = 'hidden';
     }
-    function closeMore(b) {
+    function closeMore() {
         overlay.style.display = 'none';
-        b.classList.remove('more-splash');
+        infoGlob.classList.remove('more-splash');
         document.body.style.overflow = '';
     }   
 

@@ -13,8 +13,7 @@ function form() {
         statusMessege = document.createElement('div');
 
         statusMessege.classList.add('status');
-        console.log(contactInput);
-        console.log(input);
+       
 
     function getForm(a,b) {
         a.addEventListener('submit', function(event) {
@@ -33,7 +32,7 @@ function form() {
                     request.onreadystatechange = function(){
                         if (request.readyState < 4) {
                             resolve();
-                        } else if (request.readyState ===4 && request.status == 200) {
+                        } else if (request.readyState === 4 && request.status == 200) {
                             resolve();
                         } else {
                             reject();
